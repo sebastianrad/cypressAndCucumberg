@@ -1,0 +1,22 @@
+{
+  "name": "cypressandcucumberg",
+  "version": "1.0.0",
+  "description": "start testing with cypress and cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianrad/cypressAndCucumberg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianrad/cypressAndCucumberg/issues"
+  },
+  "homepage": "https://github.com/sebastianrad/cypressAndCucumberg#readme",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  }
+}
