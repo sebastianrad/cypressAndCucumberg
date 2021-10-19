@@ -1,2 +1,2 @@
-# cypressAndCucumberg
-start testing with cypress and cucumberg
+# cypressAndCucumber
+start testing with cypress and cucumber
