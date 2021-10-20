@@ -6,6 +6,9 @@
   "scripts": {
     "test": "npx cypress open"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sebastianrad/cypressAndCucumberg.git"
@@ -17,6 +20,9 @@
   },
   "homepage": "https://github.com/sebastianrad/cypressAndCucumberg#readme",
   "devDependencies": {
-    "cypress": "^8.6.0"
+    "cucumber": "^7.0.0-rc.0",
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "reuse-cucumber-scenarios": "^1.1.7"
   }
 }
