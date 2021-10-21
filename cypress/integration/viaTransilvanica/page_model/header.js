@@ -9,18 +9,24 @@ export const Header = {
     clickLogoViaTransilvanica(){
         this.getLogoViaTransilvanica().click()
     },
-    getRoButton(){
-        return cy.get(SWITCH_LANGUAGE_BUTTON).contains('RO')
+    getLaguageButton(text){
+        return cy.get(SWITCH_LANGUAGE_BUTTON).contains(text)
     },
-    clickRO(){
-        this.getRoButton().click()
+    clickLanguageButton(text){
+        this.getLaguageButton(text).click()
     },
-    getEnButton(){
-        return cy.get(SWITCH_LANGUAGE_BUTTON).contains('EN')
-    },
-    clickEn(){
-        this.getEnButton().click()
-    },
+    // getRoButton(){
+    //     return cy.get(SWITCH_LANGUAGE_BUTTON).contains('RO')
+    // },
+    // clickRO(){
+    //     this.getRoButton().click()
+    // },
+    // getEnButton(){
+    //     return cy.get(SWITCH_LANGUAGE_BUTTON).contains('EN')
+    // },
+    // clickEn(){
+    //     this.getEnButton().click()
+    // },
     getContribuieButton(){
         return cy.get(CONTRIBUIE_MAGAZIN_BUTTON).contains('Contribuie')
     },

@@ -31,3 +31,20 @@ Feature: test main page from Via Transilvanica
     Scenario: check cookies popup is visible
         Then cookies popup is displayed
 
+    Scenario Outline: check the color for language button
+        When I check the color for "<button>"
+        Then The "<button>" "<rgb color>" is:
+
+        Examples:
+            | button | rgb color          |
+            | RO     | rgb(239, 125, 0)   |
+            | EN     | rgb(255, 255, 255) |
+
+    Scenario Outline: check the color for language button after click on EN
+        When I click on En button
+        Then The "<button>" "<rgb color>" is:
+
+        Examples:
+            | button | rgb color          |
+            | EN     | rgb(239, 125, 0)   |
+            | RO     | rgb(255, 255, 255) |

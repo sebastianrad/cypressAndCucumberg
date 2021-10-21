@@ -16,8 +16,8 @@ When('{string} menu is displayed', (string) => {
 Then('the elements are visible', () => {
     cy.wait(4000)
     Header.getLogoViaTransilvanica().should('be.visible')
-    Header.getRoButton().should('be.visible')
-    Header.getEnButton().should('be.visible')
+    Header.getLaguageButton('RO').should('be.visible')
+    Header.getLaguageButton('EN').should('be.visible')
     Header.getContribuieButton().should('be.visible')
     Header.getMagazinButton().should('be.visible')
     Header.getMenu().should('be.visible')
@@ -34,3 +34,14 @@ Then('cookies popup is displayed', () => {
     Cookies.getAcceptButton().should('be.visible')
     Cookies.getTermeniSiConditii().should('be.visible')
 })
+When('I check the color for {string}',(language)=>{ 
+    Header.getLaguageButton(language)
+
+})
+Then('The {string} {string} is:',(language, rgbColor)=>{
+    Header.getLaguageButton(language).should('have.css', 'color').and('eq',rgbColor)
+})
+When('I click on En button',()=>{ 
+    Header.clickLanguageButton('EN')
+})
+
